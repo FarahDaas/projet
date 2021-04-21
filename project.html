@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>med project</title>
+    <link rel="stylesheet" href="style.Css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navb">
+             <!--menu--> 
+             <div>
+                <div class="header"></div>
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                  <div class="spinner diagonal part-1"></div>
+                  <div class="spinner horizontal"></div>
+                  <div class="spinner diagonal part-2"></div>
+                  
+                </label>
+                <div id="sidebarMenu">
+                  <ul class="sidebarMenuInner">
+                    <li>ADS <span>SHOPPING</span></li>
+                    <li><a href="#" target="_blank">Vetement</a></li>
+                    <li><a href="#" target="_blank">Chaussure</a></li>
+                    <li><a href="#" target="_blank">Accesoire</a></li>
+                  
+                  </ul>
+                </div> 
+            </div>  
+                 <!--fin menu-->  
+           
+             <div class="ads">
+                <a href='index.html .html'><img class="logo" src="174229772_497214088122086_2907023787883883817_n.png"></a>
+              </div>
+              <nav>
+                <ul id='MenuItems'> 
+                    <li><a href='#'>Accueil</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">connexion</button></li>
+                    <li><form> <input type="search" placeholder="recherches" > </form></li>
+                    <li><p><a href="favoris.html" ><i class="far fa-heart"></i></a></p></li>
+                    <li><p><a href="panier.html" ><i class="fas fa-shopping-cart"></i></a></p></li>
+               </ul>
+              </nav>
+          </div>
+           <div id='login-form'class='login-page'>
+             <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Se connecter</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Inscription</button>     
+                </div>
+                <form id='login' class='input-group-login'>
+              <input type='text'class='input-field'placeholder='votre email' required >
+		      <input type='password'class='input-field'placeholder='Entre votre mot de passe' required>
+		      <button type='submit'class='submit-btn'>continuer</button>
+		     </form>
+		     <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='nom' required>
+		     <input type='text'class='input-field'placeholder='Prénom ' required>
+		     <input type='email'class='input-field'placeholder='E-mail ' required>
+		     <input type='password'class='input-field'placeholder='mot de passe' required>
+		     <input type='password'class='input-field'placeholder='confirmer le mot de passe'  required>
+		     <input type='checkbox'class='check-box'><span>J'accepte les termes et conditions</span>
+                    <button type='submit'class='submit-btn'>inscription</button>
+                </form>
+                 
+              </div>
+          </div>
+                <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+            {
+                x.style.left='-400px';
+                y.style.left='50px';
+                z.style.left='110px';
+            }
+            function login()
+            {
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+        </script>
+        
+        <script>
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event) 
+            {
+                if (event.target == modal) 
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+       
+    </div>
+    </header>
+    
+     
+    <!--fin de la barre de navigation-->
+       <div class="categories">
+           <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">  <img src="images/category-2.jpg" alt="">
+             </div>
+                <div class="col-3">  <img src="images/category-3.jpg" alt="">
+                   
+             </div>
+             </div>
+           </div>
+           
+       </div>
+ <!-------featured product------>
+
+
+
+
+
+ <div class="small-container">
+     <h2 class="title" >
+         men's products
+     </h2>
+     <div class="row">
+         <div class="col-4">
+             <img src="images/product-1.jpg">
+             <h4> red printsed t-shirt</h4>
+             <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                
+                 </div>
+                 <ul>
+             <p>$37.00</p>
+             <a href=""class="btn">Add to Cart</a>
+            </ul>
+         </div>
+         <div class="col-4">
+            <img src="images/product-2.jpg">
+            <h4>black sport shoes</h4>
+            <div class="rating">
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star-half-o" ></i>
+               <i class="fa fa-star" ></i>
+             
+              
+           <ul>
+                <p>$50.00</p>
+            
+            <a href=""class="btn">Add to Cart</a>
+        
+    </ul>
+            </div>
+
+        </div>
+        <div class="col-4">
+            <img src="images/product-3.jpg">
+            <h4> sport pants+shoes</h4>
+            <div class="rating">
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-heart"></i>
+                </div>
+            <p>$90.00</p>
+            <a href=""class="btn">Add to Cart</a>
+        </div>
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>  gris sport shoes </h4>
+            <div class="rating">
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               
+                </div>
+            <p>$50.00</p>
+            <a href=""class="btn">Add to Cart</a>
+        </div>
+        <div class="col-4">
+            <img src="images/product-4.jpg">
+            <h4> blue sky printsed t-shirt</h4>
+            <div class="rating">
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               
+                </div>
+            <p>$37.00</p>
+            <a href=""class="btn">Add to Cart</a>
+        </div>
+        <div class="col-4">
+            <img src="images/product-6.jpg">
+            <h4> black printsed t-shirt</h4>
+            <div class="rating">
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               
+                </div>
+            <p>$37.00</p>
+            <a href=""class="btn">Add to Cart</a>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4> sport pants</h4>
+            <div class="rating">
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               
+                </div>
+            <p>$40.00</p>
+            <a href=""class="btn">Add to Cart</a>
+        </div>
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4> dragon sport shoes</h4>
+            <div class="rating">
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               <i class="fa fa-star" ></i>
+               
+                </div>
+            <p>$62.00</p>
+            <a href=""class="btn">Add to Cart</a>
+        </div>
+             </div>
+
+             <!-------------womens products-->
+
+
+
+             <H2 class="title"s>women's products</H2>
+             <div class="row">
+                <div class="col-4">
+                    <img src="images/tee-shirt-esther.jpg">
+                    <h4> red printsed t-shirt</h4>
+                    <div class="rating">
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       <i class="fa fa-star" ></i>
+                       
+                        </div>
+                    <p>$37.00</p>
+                    <a href=""class="btn">Add to Cart</a>
+                </div>
+                <div class="col-4">
+                   <img src="images/pantalon-violet-5.jpg">
+                   <h4> purple pants</h4>
+                   <div class="rating">
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star-half-o" ></i>
+                      <i class="fa fa-star" ></i>
+                      
+                       </div>
+                   <p>$50.00</p>
+                   <a href=""class="btn">Add to Cart</a>
+               </div>
+               <div class="col-4">
+                   <img src="images/chemise-over-black.jpg">
+                   <h4> chemise over black</h4>
+                   <div class="rating">
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-heart"></i>
+                       </div>
+                   <p>$49.00</p>
+                   <a href=""class="btn">Add to Cart</a>
+               </div>
+               <div class="col-4">
+                   <img src="images/combinaison-moutarde-en-coton-croise-au-buste-vetement-femme-fashion.jpg">
+                   <h4> combinaison-moutarde-en-coton-croise-au-busten</h4>
+                   <div class="rating">
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      <i class="fa fa-star" ></i>
+                      
+                       </div>
+                   <p>$90.00</p>
+                   <a href=""class="btn">Add to Cart</a>
+               </div>
+               <div class="col-4">
+                <img src="images/combi-short-noir-avec-volant-et-dentelle-vetement-femme.jpg">
+                <h4> combi-short-noir-avec-volant-et-dentelle</h4>
+                <div class="rating">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   
+                    </div>
+                <p>$90.00</p>
+                <a href=""class="btn">Add to Cart</a>
+            </div>
+            <div class="col-4">
+                <img src="images/combinaison-marine-en-coton-croise-au-buste-vetement-femme-fashion.jpg">
+                <h4> combinaison-marine-en-coton-croise-au-buste</h4>
+                <div class="rating">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   
+                    </div>
+                <p>$62.00</p>
+                <a href=""class="btn">Add to Cart</a>
+            </div>
+            <div class="col-4">
+                <img src="images/vetement-femme-robe-classique-sombre.jpg">
+                <h4>robe-classique-sombre</h4>
+                <div class="rating">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   
+                    </div>
+                <p>$62.00</p>
+                <a href=""class="btn">Add to Cart</a>
+            </div>
+            <div class="col-4">
+                <img src="images/ensemble-de-vetement-femme-combinaison-2pcs-lettre.jpg">
+                <h4> ecombinaison-2pcs-lettre</h4>
+                <div class="rating">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   
+                    </div>
+                <p>$80.00</p>
+                <a href=""class="btn">Add to Cart</a>
+            </div>
+         
+ </div>
+
+
+<!----------offer----------->
+
+ <div class="offer">
+     <div class="small-contraineer">
+         <div class="row">
+            <div class="col-2">
+<img src="images/exclusive.png" class="offer-img" >
+            </div>
+            <div class="col-2">
+                <p>exclusive available on ADS store </p>
+            <h1>smart band 4</h1>
+            <small>
+                the mi smart band 4 features a 39.9 larger (than mi band 3 )
+                amoled <br> color full -touch  display with adjustable brightness <br>,so 
+                everything is clear as can be 
+            </small>
+            <a href=""class ="btn">buy now &#8594;</a>
+            </div>
+         </div>
+     </div>
+
+ </div>
+<!-----------testimonial-------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left" ></i>
+                <p>accessory designer</p>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    
+                     </div>
+                     <img src="images/mohamed.jpg" >
+                     <h3>bououn mouhamed</h3>
+            </div>
+            <div class="col-3">
+                <p>shoes designer</p>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    
+                     </div>
+                     <img src="images/jiji.jpg" >
+                     <h3>jihen chaieb</h3>
+            </div>
+            <div class="col-3">
+                <p>pants designer</p>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    
+                     </div>
+                     <img src="images/chaieb.jpg" >
+                     <h3>oussema chaieb </h3>
+            </div>
+            <div class="col-3">
+                <p>t-shirt designer</p>
+                <div class="rating">
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    
+                     </div>
+                     <img src="images/farah.jpg" >
+                     <h3>farah daas</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------brands------------------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+
+            <img src="images/logo-godrej.png" >
+            </div>
+            <div class="col-5">
+
+                <img src="images/logo-oppo.png" >
+                </div>
+                <div class="col-5">
+
+                    <img src="images/logo-paypal.png" >
+                    </div>
+                    <div class="col-5">
+
+                        <img src="images/logo-coca-cola.png" >
+                        </div>
+                        <div class="col-5">
+
+                            <img src="images/logo-philips.png" >
+                            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------footer------------------->
+ <div class="footer">
+    <div class="container">
+        <div class="ID2021_Copyright_ADS">
+            <p>2021 Copyright , ADS</p>
+        </div>
+        <img class="logobas" src="images/logo.png">
+	
+        <div class="Contactfooter">
+                <a class="h" href="Contact.html"> Contact </a> 
+        </div>
+        
+        <div class="Privacy_Policy">
+        <a class="h" href="Privacy.html"> 
+    Politique de confidentialité </a> 	</div>
+        
+        <div class="Terms_condition">
+        <a class="h" href="terms.html"> Termes & Conditions
+     </a> 	</div>
+        
+        <div class="Follow_Us">
+            <p>Follow Us : </p>
+        </div>
+            <a href="https://www.facebook.com"> 
+        <img class="facebook" src="images/facebook.png"> </a>
+        <a href="https://www.instagram.com"> 
+        <img class="instagram" src="images/insta.png"> </a>
+    
+        </div>
+    </div>
+</div>
+

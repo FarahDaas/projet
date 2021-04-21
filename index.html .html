@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>www.ADS.com</title>
+</head>
+<body>
+     
+     
+      <header>
+    <!--barre de navigation-->
+    <div class="full-page">
+        <div class="navb">
+             <!--menu--> 
+             <div>
+                <div class="header"></div>
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                  <div class="spinner diagonal part-1"></div>
+                  <div class="spinner horizontal"></div>
+                  <div class="spinner diagonal part-2"></div>
+                  
+                </label>
+                <div id="sidebarMenu">
+                  <ul class="sidebarMenuInner">
+                    <li>ADS <span>SHOPPING</span></li>
+                    <li><a href="project.html" target="_blank">Vetement</a></li>
+                    <li><a href="#" target="_blank">Chaussure</a></li>
+                    <li><a href="#" target="_blank">Accesoire</a></li>
+                  
+                  </ul>
+                </div> 
+            </div>  
+                 <!--fin menu-->  
+           
+             <div class="ads">
+                <a href='index.html .html'><img class="logo" src="174229772_497214088122086_2907023787883883817_n.png"></a>
+              </div>
+              <nav>
+                <ul id='MenuItems'> 
+                    <li><a href='#'>Accueil</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">connexion</button></li>
+                    <li><form> <input type="search" placeholder="recherches" > </form></li>
+                    <li><p><a href="favoris.html" ><i class="far fa-heart"></i></a></p></li>
+                    <li><p><a href="panier.html" ><i class="fas fa-shopping-cart"></i></a></p></li>
+               </ul>
+              </nav>
+          </div>
+           <div id='login-form'class='login-page'>
+             <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Se connecter</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Inscription</button>     
+                </div>
+                <form id='login' class='input-group-login'>
+              <input type='text'class='input-field'placeholder='votre email' required >
+		      <input type='password'class='input-field'placeholder='Entre votre mot de passe' required>
+		      <button type='submit'class='submit-btn'>continuer</button>
+		     </form>
+		     <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='nom' required>
+		     <input type='text'class='input-field'placeholder='Prénom ' required>
+		     <input type='email'class='input-field'placeholder='E-mail ' required>
+		     <input type='password'class='input-field'placeholder='mot de passe' required>
+		     <input type='password'class='input-field'placeholder='confirmer le mot de passe'  required>
+		     <input type='checkbox'class='check-box'><span>J'accepte les termes et conditions</span>
+                    <button type='submit'class='submit-btn'>inscription</button>
+                </form>
+                 
+              </div>
+          </div>
+                <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+            {
+                x.style.left='-400px';
+                y.style.left='50px';
+                z.style.left='110px';
+            }
+            function login()
+            {
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+        </script>
+        
+        <script>
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event) 
+            {
+                if (event.target == modal) 
+                {
+                    modal.style.display = "block";
+                }
+            }
+        </script>
+       
+    </div>
+    </header>
+    
+     
+    <!--fin de la barre de navigation-->
+    <!--section1-->
+    <section id="s1">
+    <!--image slider start-->
+    <div class="slider"> 
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <!--radio buttons end-->
+            <!--slider images start-->
+            <div class="slide first">
+                <img src="image/image2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="image/image9.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="image/image1.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="image/image6.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="image/image7.jpg" alt="">
+            </div>
+            <div class="slide ">
+                <img src="image/image8.jpg" alt="">
+            </div>
+
+            <!--slider images end-->
+            <!--automatic navigation start-->
+             <div class="navigation-auto">
+                 <div class="auto-btn1"></div>
+                 <div class="auto-btn2"></div>
+                 <div class="auto-btn3"></div>
+                 <div class="auto-btn4"></div>
+                 <div class="auto-btn5"></div>
+                 <div class="auto-btn6"></div>
+             </div>
+            <!--automatic navigation end-->
+        </div>
+  
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+        </div>
+        
+        <!--manual navigation end-->
+    </div>
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 6) {
+                counter = 1;
+            }
+        }, 5000);
+            
+            </script>
+    <!--image slider end-->
+    
+    </section>
+    <section id="s2">
+        <div class="zoom colonne">
+           
+            <div>
+            <div id="photos"><img src="image/bask2.jpg" width="200px" height="150px" /></div>
+            </div>
+            <div>
+            <div id="photos"><img src="image/pont2.jpg" width="200px" height="150px" /></div>
+            </div>
+            <div>
+            <div id="photos"><img src="image/boy.jpg" width="200px" height="150px"/></div>
+            </div>
+        </div>
+        <div id="gif">
+            <img src="http://www.nice-pearls.com/fichiers_site/a4138jap/categories/Promotions.gif" title="" alt="" width="300" align="middle">        
+        </div>
+        <p id="pont">Pantalon balloon 15,59 € -40%</p>
+        <p id="bask">Baskets détails velours 20,99 € -30%</p>
+        <p id="shir">T-shirt oversize 15,99 € -20%</p>
+        <br>
+        <div>
+        <div id="prom"><img src="image/promo.png" width="100%" height="100%"/></div>
+        <a href='vatement.html'><div id="tee"><img src="image/tee.png" width="100%" height="100%"/></div></a>
+        <div id="berm"><img src="image/berm.png" width="100%" height="100%"/></div>
+        </div>
+        <div id="text"><p>notre equipes vous souhaite Ramadhan karim</p></div>
+      
+    </section>
+    
+
+   <!--footer-->
+        <footer>
+           
+
+<img class="logobas" src="174229772_497214088122086_2907023787883883817_n.png"><br>
+<div class="ID2021_Copyright_ADS">
+    <p>2021 Copyright , ADS</p>
+</div><br>
+
+<div class="Contactfooter">
+        <a class="h" href="Contact.html"> Contact </a> 
+</div><br>
+
+<div class="Privacy_Policy">
+<a class="h" href="index.html .html"> 
+Politique de confidentialité </a> 	</div><br>
+
+<div class="Terms_condition">
+<a class="h" href="index.html .html"> Termes & Conditions</a></div>
+<div class="Follow_Us">
+    <p>Follow Us : </p>
+</div><br>
+    <a href="https://www.facebook.com"> 
+<img class="facebook" src="173404366_185078793437959_8041166354338951196_n.png"> </a>
+<a href="https://www.instagram.com"> 
+<img class="instagram" src="173668907_1051133118628397_695021853822085097_n.png"> </a>
+</div>
+</footer>
+</body>
+</html>
+
+
+
+
